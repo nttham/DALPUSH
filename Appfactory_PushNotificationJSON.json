@@ -1,0 +1,90 @@
+{
+  "servicename": "push12",
+  "platform": "2004",
+  "appurl": "NodeJS/helloworld",
+  "api_url": "https://api.mvp2.cognizantone.org",
+  "login_url": "https://login.mvp2.cognizantone.org/oauth/token",
+  "host": "mvp2.cognizantone.org",
+  "boundtype": "yes",
+  "category": "notification",
+  "spaceguid": "ac4d358a-9b3b-4a23-91e2-b82988395e8d",
+  "serviceplanguid": "c449b7e7-c27e-406c-8f78-c3348ec00077",
+  "refreshtoken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImxlZ2FjeS10b2tlbi1rZXkiLCJ0eXAiOiJKV1QifQ.eyJqdGkiOiIxMzI3YjA5Y2YwZjM0MjQ2ODc2ZTVhMGJhZjJkMjJmMy1yIiwic3ViIjoiZTU3NDhjZmItMDRlMy00ZmY4LWFmNzMtYjEyMjM4YzhhYzUzIiwic2NvcGUiOlsib3BlbmlkIiwidWFhLnVzZXIiLCJjbG91ZF9jb250cm9sbGVyLnJlYWQiLCJwYXNzd29yZC53cml0ZSIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiXSwiaWF0IjoxNDc1MTMwNjc4LCJleHAiOjE0Nzc3MjI2NzgsImNpZCI6ImNmIiwiY2xpZW50X2lkIjoiY2YiLCJpc3MiOiJodHRwczovL3VhYS5tdnAyLmNvZ25pemFudG9uZS5vcmcvb2F1dGgvdG9rZW4iLCJ6aWQiOiJ1YWEiLCJncmFudF90eXBlIjoicGFzc3dvcmQiLCJ1c2VyX25hbWUiOiJzYW5kaHlhIiwib3JpZ2luIjoidWFhIiwidXNlcl9pZCI6ImU1NzQ4Y2ZiLTA0ZTMtNGZmOC1hZjczLWIxMjIzOGM4YWM1MyIsInJldl9zaWciOiI0ODY0M2UzYiIsImF1ZCI6WyJjZiIsIm9wZW5pZCIsInVhYSIsImNsb3VkX2NvbnRyb2xsZXIiLCJwYXNzd29yZCJdfQ.gNnKaNDUTISlfN4dcAdgq6YJAJt-VBRS5pBaDuk8Y0686VafPgmKO9tZYRBIvh1-ldqGcR_MQdD9748SDrouAkiuVzMs_Wi5ABRsdKYCTqHRMpuAlUliqg8q1D_qA4zCdQGecEWETHwzjFht7FHJqOmkCD98SOZSvziwHiHetvjT5zZMfS7EsOquCURM7thYdetOktFcs_aeBgeMlKnPaf4OzvlpEHrkgOUsd0tEeTzzpiM-Iwj6yQXeP-w-9Wkl5Ds-_jIvwNDuGk9HpXkISiiXWJ9ZFGvYYFi7yQEvQiCqKpojD6-q82qJQy18Wy7sQIJcA5r_iE99wroYoeAEvg",
+  "environment_json": {
+  "templates": [
+    {
+      "templateId": "1",
+      "gcm": {
+        "collapseKey": "string",
+        "priority": "high/normal",
+        "contentAvailable": true,
+        "delayWhileIdle": true,
+        "timeToLive": 10
+      },
+      "apn": {
+        "expiry": 10,
+        "badge": 10,
+        "sound": "tiff"
+      },
+      "wns": {
+        "type": "tile or toast or raw",
+        "subType": "Subtype in tile or toast. In case of Raw it does not apply",
+        "ttl": "headers that needs to be sent to WNS"
+      }
+    },
+    {
+      "templateId": "2",
+      "gcm": {
+        "collapseKey": "string",
+        "priority": "high",
+        "contentAvailable": true,
+        "delayWhileIdle": true,
+        "timeToLive": 10
+      },
+      "apn": {
+        "expiry": 106,
+        "badge": 4,
+        "sound": "ping"
+      },
+      "wns": {
+        "type": "tile",
+        "subType": "Subtype in tile or toast. In case of Raw it does not apply",
+        "ttl": "100"
+      }
+    },
+    {
+      "templateId": "3",
+      "gcm": {
+        "collapseKey": "string",
+        "priority": "normal",
+        "contentAvailable": true,
+        "delayWhileIdle": true,
+        "timeToLive": 10
+      },
+      "apn": {
+        "expiry": 106,
+        "badge": 4,
+        "sound": "ping"
+      },
+      "wns": {
+        "type": "raw",
+        "subType": "Subtype in tile or toast. In case of Raw it does not apply",
+        "ttl": "200"
+      }
+    }
+  ]
+},
+  "otherservices": [
+    {
+      "category": "logger",
+      "service_plan_guid": "d03eecd8-f7fb-4622-b5c2-11b63b46c763",
+      "service_instance_name": "",
+      "service_instance_id": "",
+      "provider": {
+        "service_plan_guid": "7e28f247-e38c-4edd-8d77-87c07998e865",
+        "service_instance_name": "Sandbox",
+        "name": "mongodb"
+      }
+    }
+  ]
+}
